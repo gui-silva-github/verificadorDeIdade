@@ -1,0 +1,65 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+#area{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+header{
+    font-size: 1.3em;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    background: rgba(0, 255, 179, 0.318);
+    box-shadow: 2px 2px 2px black;
+}
+
+.conteudoVerificador{
+    font-size: 1.15em;
+    margin-bottom: 5px;
+    border: 0.5px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 600px;
+    background: rgba(0, 255, 179, 0.318);
+    box-shadow: 2px 2px 2px black;
+}
+
+div{
+    margin: 3px;
+}
+
+label{
+    margin: 5px 10px;
+}
+
+button{
+    width: 300px;
+}
+
+input{
+    border-radius: 10px;
+    text-align: center;
+}
+
+#foto{
+    background: white;
+    height: 350px;
+    width: 500px;
+    box-shadow: 2px 2px 2px black;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+footer{
+    font-size: 1.15em;
+    margin-top: 15px;
+    text-shadow: 1px 1px 1px black;
+}
+
