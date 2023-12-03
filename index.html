@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="background: rgba(0, 76, 255, 0.777); font-size: 1.4em; 
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onload="verificar()">
+
+    <div id="area">
+        
+        <header id="saudacao">
+
+
+            <!-- Aqui irá conter o Bom dia, Boa tarde ou  Boa noite -->
+    
+        </header>
+
+        <h1>Verificador de Idade</h1>
+    
+        <section class="conteudoVerificador">
+    
+            <!-- Aqui irá conter as etapas para o verificador -->
+    
+            <label for="anoNasc">Ano de nascimento:</label> <br>
+            <input type="number" min="1880" id="ano"> <br>
+
+        </section>
+
+        <section class="conteudoVerificador">
+
+             <!-- Aqui irá conter as etapas para o verificador -->
+    
+            <label for="sexo">Sexo:</label>
+    
+            <input type="radio" name="sexualidade" id="mas" checked>
+            <label for="masculino">Masculino</label>
+    
+            <input type="radio" name="sexualidade" id="fem">
+            <label for="feminino">Feminino</label>
+    
+            <br>
+        
+        </section>
+
+        <section class="conteudoVerificador">
+
+             <!-- Aqui irá conter o botão para acionar o verificador -->
+
+            <button type="button" class="btn btn-info" onclick="analisar()">Enviar</button>
+ 
+        </section>
+
+        <section class="conteudoVerificador">
+    
+            <!-- Aqui irá conter o espaço para colocar a imagem correspondente ao sexo e a idade -->
+    
+            <div id="imagem">
+    
+                <img id="foto" src="">
+    
+            </div>
+
+            <div id="res">
+
+                 <!-- Aqui irá conter a resposta do verificador -->
+    
+                <p>Preencha os campos acima para ver o resultado!</p>
+    
+            </div>
+        
+        </section>
+    
+        <footer>
+    
+            <p>&copy; Gui Silva</p>
+    
+        </footer>
+    
+        <script src="main.js"></script>
+
+    </div>
+
+</body>
+</html>
