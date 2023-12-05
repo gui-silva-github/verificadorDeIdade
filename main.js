@@ -28,7 +28,7 @@ function verificar(){
 
         mensagem.innerHTML = `Para você que chegou nesse programa às ${horas} horas, tenha uma <strong>boa tarde</strong>!`;
 
-    } else if (horas >= 18 && horas <= 0) {
+    } else if (horas >= 18 && horas < 24) {
 
         mensagem.innerHTML = `Para você que chegou nesse programa às ${horas} horas, tenha uma <strong>boa noite</strong>!`;
 
@@ -48,7 +48,7 @@ function verificar(){
 
         let ano = data.getFullYear();
 
-    if (anoNasc.value.length == 0 || anoNasc.value<1880 || anoNasc.value>ano){
+    if (anoNasc.value.length == 0 || anoNasc.value<anoNasc.min || anoNasc.value>ano){
 
         alert("ERRO -> Digite um ano de nascimento váido!");
 
@@ -140,8 +140,16 @@ function verificar(){
 
         // Mostrando além da imagem, o texto da detectação
 
-        resposta.innerHTML = `Detectamos ${genero} com ${idade} anos!`;
+        resposta.innerHTML = `Detectamos ${genero} com ${testeAno(idade)}`;
 
     }
+
+}
+
+// Caso for 1 ano de idade, terá de retornar "1 ano"
+
+function testeAno(ano){
+
+    return ano === 1 ? '1 ano!' : `${ano} anos!`; 
 
 }
