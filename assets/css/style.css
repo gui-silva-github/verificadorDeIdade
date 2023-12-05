@@ -63,3 +63,23 @@ footer{
     text-shadow: 1px 1px 1px black;
 }
 
+@media (max-width: 770px) {
+    body {
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        width: 600px;
+    }
+    #area{
+        width: 600px;
+    }
+    #foto{
+        width: 400px;
+    }
+    h1, p {
+        text-align: center;
+    }
+}
+
